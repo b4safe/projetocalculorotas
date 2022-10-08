@@ -24,3 +24,53 @@ form input {
     width: 100%;
 }
 
+--menu--font--
+* {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+}
+* {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+}
+
+li {
+    height: 10em;
+    margin: 0;
+    position: flex;
+    top: 50%;
+    left: 50%;   
+        
+}
+li a {
+    
+    padding: 5px 10px; 
+    margin:0px;
+    border: 0px solid #f00; 
+    background: #903;
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+li a:hover {
+    background: rgb(195, 196, 190);
+    color: #000; 
+   
+}
+.button
+{
+    text-align: center;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Verdana;
+    font-weight:bold;
+    font-size:13px;
+    padding:6px 10px;
+    text-decoration:none;
+}
+body {
+    text-align: center
+ } 

@@ -1,6 +1,6 @@
 <?php
 define('HOST', 'localhost');
-define('USUARIO' , 'root');
+define('USUARIO' , 'usuarioteste');
 define('SENHA' , '123456');
 define('DB', 'cadastroviagens');
 

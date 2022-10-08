@@ -1,6 +1,7 @@
 <?php
 
 if(!$_SESSION['usuario']){
-    header('Location:index.php');
+    header('Location:index.html');
     exit();
 }
+?>

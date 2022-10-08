@@ -4,7 +4,7 @@ include ('conexao.php');
 $conexao = mysqli_connect(HOST,USUARIO,SENHA,DB) or die('conexão com banco nao estabelecida');
 
 if (empty($_POST['nomeusuario']) || empty($_POST['senhausuario'])) {
-header('Location: index.php');
+header('Location: index.html');
 exit();
 
 }
@@ -12,7 +12,7 @@ exit();
 $usuario = mysqli_real_escape_string($conexao, $_POST['nomeusuario']);
 $senha = mysqli_real_escape_string($conexao, $_POST['senhausuario']);
 
-$query = "select * from usuarios where login = '$usuario' and senha = '$senha'";
+$query = "select * from usuarios where usuario = '$usuario' and senha = '$senha'";
 
 $result = mysqli_query($conexao, $query);
 $row = mysqli_num_rows($result);
@@ -22,7 +22,7 @@ if ($row ==1){
     header('Location: menu.php');
     exit();
 } else {
-  header('Location: index.php');
+  header('Location: index.html');
   exit();
 }
 
