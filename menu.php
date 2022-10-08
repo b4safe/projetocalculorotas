@@ -5,23 +5,17 @@ include('conexao.php');
 ?>
 <h2>Olá, <?php echo $_SESSION['usuario'];?></h2>
 
-<?php
-if (!'conexao.php') {
- die("conexao falhou :" .mysqli_connect_error());
-}
 
-echo "conectado com sucesso"
+<link rel="stylesheet" type="text/css" href="style.css" />
+<ul>
+    
+    <li><a class= "button" href="veiculos.html">Veículos</a></li>
+    <li><a class= "button" href="rotas.html">Cadastrar Rotas</a></li>
+    <li><a class= "button" href="dados.php">Cadastrados</a></li>
+    <li><a class= "button" href="calculorotas.php">Calcular Rotas</a></li>
+    
+</ul>
 
-?>
-
-
-
-
-
-
-
-
-
-<!--LOGOUT -->
-
-<h2><a href="logout.php">Sair</h2>
+<ul>
+    <li><a class= "button" href="logout.php">Sair</a></li>
+</ul>
